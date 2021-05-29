@@ -164,7 +164,7 @@ deplacement_joueur(est):-dimitri(X,Y),
                         !.
 deplacement_joueur(_).
 % 5.
-verification:-dimitri(X,Y),
+verification(X,Y):-dimitri(X,Y),
               X1 is X+1,
               not(vache(X1,Y,_,zombie)),
               X2 is X-1,
@@ -173,6 +173,7 @@ verification:-dimitri(X,Y),
               not(vache(X,Y1,_,zombie)),
               Y2 is Y-1,
               not(vache(X,Y2,_,zombie)).
+verification:-verification(X,Y).
 
 % le reste est le code predefini du jeu
 initialisation :-nombre_rochers(NR),
