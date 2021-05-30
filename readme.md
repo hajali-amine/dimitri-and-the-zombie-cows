@@ -10,17 +10,6 @@ Type *jouer*.
 <br>
 And then type either *nord*, *sud*, *est*, *west* or *reste*.
 
-## Flowchart
-
-```mermaid
-graph TD
-A((jouer.)) --> B{Direction?}
-B -- !touch_zombie --> C(move)
-C --> B
-B -- touch zombie --> D[\Dimitri dies\]
-D --> E((end))
-```
-
 ## Demo:
 
  <p align="center">
