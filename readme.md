@@ -11,7 +11,7 @@ Type *jouer*.
 And then type either *nord*, *sud*, *est*, *west* or *reste*.
 
 ## Demo:
- <div align=”center”>
+ <p align=”center”>
 ![A little demo](https://github.com/hajali-amine/DimitriAndTheZombieCows/blob/main/demo.gif)
-</div>
+</p>
 ## Have fun!
