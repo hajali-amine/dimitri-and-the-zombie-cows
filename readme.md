@@ -14,4 +14,5 @@ And then type either *nord*, *sud*, *est*, *west* or *reste*.
  <p align=”center”>
   <img src="https://github.com/hajali-amine/DimitriAndTheZombieCows/blob/main/demo.gif" alt="animated" />
 </p>
+
 ## Have fun!
