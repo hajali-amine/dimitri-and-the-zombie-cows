@@ -68,7 +68,6 @@ question(R):-write('Dans quelle direction voulez-vous deplacer Dimitri? nord? su
             read(R).
 % 2.
 morte(X,Y):-vache(X,Y,_,zombie).
-zombification([]).
 zombification(X,Y):-X1 is X-1,
                   morte(X1,Y),
                   retract(vache(X,Y,Race,vivante)),
@@ -89,7 +88,8 @@ zombification(X,Y):-Y1 is Y+1,
                   retract(vache(X,Y,Race,vivante)),
                   assert(vache(X,Y,Race,zombie)),
                   !.
-zombification(X,Y).
+zombification(_,_).
+zombification([]).
 zombification([(X,Y)|L]):-zombification(X,Y),
                           zombification(L).
 zombification:-vaches(L),zombification(L).
@@ -128,10 +128,8 @@ deplacement_vache(X,Y,est):-largeur(L),
                             retract(vache(X,Y,Race,Etat)),
                             assert(vache(X1,Y,Race,Etat)),
                             !.
-deplacement_vache(_,_, reste):!.
-deplacement_vache(X,Y,_).
+deplacement_vache(_,_,_).
 % 4.
-deplacement_joueur(reste):!.
 deplacement_joueur(nord):-dimitri(X,Y),
                           Y>0,
                           Y1 is Y-1,
@@ -173,7 +171,7 @@ verification(X,Y):-dimitri(X,Y),
               not(vache(X,Y1,_,zombie)),
               Y2 is Y-1,
               not(vache(X,Y2,_,zombie)).
-verification:-verification(X,Y).
+verification:-verification(_,_).
 
 % le reste est le code predefini du jeu
 initialisation :-nombre_rochers(NR),
