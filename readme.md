@@ -13,7 +13,7 @@ And then type either *nord*, *sud*, *est*, *west* or *reste*.
 ## Demo:
 
  <p align="center">
-  <img src="https://github.com/hajali-amine/DimitriAndTheZombieCows/blob/main/demo.gif" alt="animated" />
+  <img src="https://github.com/hajali-amine/dimitri-and-the-zombie-cows/blob/main/demo.gif" alt="animated" />
 </p>
 
 ## Have fun!
