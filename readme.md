@@ -12,6 +12,6 @@ And then type either *nord*, *sud*, *est*, *west* or *reste*.
 
 ## Demo:
  <p align=”center”>
-![A little demo](https://github.com/hajali-amine/DimitriAndTheZombieCows/blob/main/demo.gif)
+  <img src="https://github.com/hajali-amine/DimitriAndTheZombieCows/blob/main/demo.gif" alt="animated" />
 </p>
 ## Have fun!
