@@ -13,13 +13,14 @@ It is implemented in Prolog using __SWI Prolog__!
 * __S__, __B__ and __H__ stand for the living cows.
 * When a zombie touches a cow, the cow turns to a zombie.
 * Each round, the cows and the zombies move in a random direction, the rocks and the trees never move and you will be asked to choose the direction for Dimitri.
+* nord means up, sud means down, ouest means left, est means right.
 
 ## To play:
 Open SWI Prolog and consult the file.
 <br>
 Type *jouer*.
 <br>
-And then type either *nord*, *sud*, *est*, *ouest* or *reste*.
+And then type either *nord*, *sud*, *est*, *ouest* or *reste* to move Dimitri.
 
 ## Demo:
 
